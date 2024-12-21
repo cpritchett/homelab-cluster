@@ -126,28 +126,26 @@ In my cluster there are two instances of [ExternalDNS](https://github.com/kubern
   <img src="https://github.com/user-attachments/assets/43bd0ca8-a1a8-49d5-9b9a-04fbdcecdd3f" align="center" alt="rack"/>
 </details>
 
-| Device                    | Count | OS Disk Size | Data Disk Size          | Ram  | Operating System | Purpose                 |
-|---------------------------|-------|--------------|-------------------------|------|------------------|-------------------------|
-| MS-01 (i9-13900H)         | 3     | 1.92TB M.2   | 3.84TB U.2 + 1.92TB M.2 | 96GB | Talos            | Kubernetes              |
-| Synology NAS RS1221+      | 1     | -            | 8x22TB HDD              | 32GB | DSM 7            | NFS                     |
-| PiKVM (RasPi 4)           | 1     | 64GB (SD)    | -                       | 4GB  | PiKVM            | KVM                     |
-| TESmart 8 Port KVM Switch | 1     | -            | -                       | -    | -                | Network KVM (for PiKVM) |
-| UniFi UDM Pro Max         | 1     | -            | 2x16TB HDD              | -    | UniFi OS         | Router & NVR            |
-| UniFi USW Pro Aggregation | 1     | -            | -                       | -    | UniFi OS         | 10G/25Gb Core Switch    |
-| UniFi USW Pro Max 24 PoE  | 1     | -            | -                       | -    | UniFi OS         | 2.5Gb PoE Switch        |
-| UniFi USP PDU Pro         | 1     | -            | -                       | -    | UniFi OS         | PDU                     |
-| APC SMT15000RM2UNC        | 1     | -            | -                       | -    | -                | UPS                     |
+| Device                     | Count | OS Disk Size | Data Disk Size          | Ram   | Operating System | Purpose                 |
+|----------------------------|-------|--------------|-------------------------|-------|------------------|-------------------------|
+| Intel NUC7i5BN             | 2     | 512Gb SSD    | 512Gb NVME              | 32GB  | Talos            | Kubernetes              |
+| Beelink EQ12               | 2     | 512Gb SSD    | 512Gb NVME              | 32GB  | Talos            | Kubernetes              |
+| 45Drives HL-15             | 1     | -            | 12x14TB HDD             | 128GB | TrueNAS Scale    | NAS                     |
+| Lenovo Thinkstation p520   | 1     | -            | Misc. SSDs              | 128GB | unRAID           | NAS                     |
+| UniFi Cloud Gateway Max    | 1     | -            | 1TB NVME                | -     | UniFi OS         | Router & NVR            |
+| UniFi USW Enterprise 8 POE | 1     | -            | -                       | -     | UniFi OS         | 2.5Gb Core Switch       |
+| UniFi USW Pro 8 POE        | 1     | -            | -                       | -     | UniFi OS         | 1Gb PoE Switch          |
 ---
 
 ## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.gif" alt="🌟" width="20" height="20"> Stargazers
 
 <div align="center">
 
-<a href="https://star-history.com/#buroa/k8s-gitops&Date">
+<a href="https://star-history.com/#cpritchett/homelab-cluster&Date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=buroa/k8s-gitops&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=buroa/k8s-gitops&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=buroa/k8s-gitops&type=Date" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=cpritchett/homelab-cluster&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=cpritchett/homelab-cluster&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=cpritchett/homelab-cluster&type=Date" />
   </picture>
 </a>
 
@@ -157,13 +155,13 @@ In my cluster there are two instances of [ExternalDNS](https://github.com/kubern
 
 ## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f64f/512.gif" alt="🙏" width="20" height="20"> Gratitude and Thanks
 
-Many thanks to my friend [@onedrop](https://github.com/onedr0p) and all the fantastic people who donate their time to the [Home Operations](https://discord.gg/home-operations) Discord community. Be sure to check out [kubesearch.dev](https://kubesearch.dev) for ideas on how to deploy applications or get ideas on what you may deploy.
+Many thanks to [@onedrop](https://github.com/onedr0p) and [@buroa](https://github.com/buroa) and the [Home Operations](https://discord.gg/home-operations) Discord community. Be sure to check out [kubesearch.dev](https://kubesearch.dev) for ideas on how to deploy applications or get ideas on what you may deploy.
 
 ---
 
 ## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6a7/512.gif" alt="🚧" width="20" height="20"> Changelog
 
-See the latest [release](https://github.com/buroa/k8s-gitops/releases/latest) notes.
+See the latest [release](https://github.com/cpritchett/homelab-cluster/releases/latest) notes.
 
 ---
 
