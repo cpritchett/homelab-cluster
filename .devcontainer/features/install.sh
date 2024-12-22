@@ -2,18 +2,18 @@
 set -e
 set -o noglob
 
-apk add --no-cache \
-    age bash bind-tools ca-certificates curl direnv gettext python3 \
-    py3-pip moreutils jq git iputils openssh-client openssl \
+# Update package list and install packages
+apt-get update
+apt-get install -y --no-install-recommends \
+    age bash bind9-dnsutils ca-certificates curl direnv gettext python3 \
+    python3-pip moreutils jq git iputils-ping openssh-client openssl \
     starship fzf fish yq helm
 
-apk add --no-cache \
-    --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community \
-        kubectl sops
+# Install kubectl and sops
+apt-get install -y --no-install-recommends kubectl sops
 
-apk add --no-cache \
-    --repository=https://dl-cdn.alpinelinux.org/alpine/edge/testing \
-        lsd
+# Install lsd
+apt-get install -y --no-install-recommends lsd
 
 for app in \
     "budimanjojo/talhelper!!?as=talhelper&type=script" \
