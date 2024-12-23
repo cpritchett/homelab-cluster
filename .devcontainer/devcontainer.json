@@ -1,0 +1,37 @@
+{
+    "name": "Homelab",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
+    "runArgs": ["--device=/dev/net/tun"],
+    "features": {
+      "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+      "ghcr.io/tailscale/codespace/tailscale": {}
+    },
+    "postCreateCommand": {
+        "setup": "bash ${containerWorkspaceFolder}/.devcontainer/postCreateCommand.sh"
+      },
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "terminal.integrated.shell.linux": "/bin/bash",
+          "extensions": [
+            "ms-azuretools.vscode-docker",
+            "ms-vscode-remote.remote-containers",
+            "albert.tabout",
+            "eamodio.gitlens",
+            "fcrespo82.markdown-table-formatter",
+            "github.codespaces",
+            "github.copilot",
+            "github.copilot-chat",
+            "github.vscode-github-actions",
+            "mitchdenny.ecdc",
+            "njpwerner.autodocstring",
+            "redhat.vscode-yaml",
+            "signageos.signageos-vscode-sops",
+            "tamasfe.even-better-toml",
+            "trunk.io",
+            "tudoudou.json5-for-vscode"
+          ]
+        }
+      }
+    }
+  }
