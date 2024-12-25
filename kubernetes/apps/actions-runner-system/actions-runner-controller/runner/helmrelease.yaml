@@ -24,7 +24,7 @@ spec:
   values:
     nameOverride: *app
     runnerScaleSetName: *app
-    githubConfigUrl: https://github.com/buroa/k8s-gitops
+    githubConfigUrl: https://github.com/cpritchett/homelab-cluster
     minRunners: 1
     maxRunners: 3
     containerMode:
@@ -33,7 +33,7 @@ spec:
       spec:
         containers:
           - name: runner
-            image: ghcr.io/buroa/actions-runner:2.321.0@sha256:08baa1d4489fdbcf85e726568406be481d35cf86da8281d9821a32b78d9301d9
+            image: ghcr.io/cpritchett/actions-runner:2.321.0@sha256:08baa1d4489fdbcf85e726568406be481d35cf86da8281d9821a32b78d9301d9
             command:
               - /home/runner/run.sh
     controllerServiceAccount:

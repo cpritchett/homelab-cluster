@@ -30,7 +30,7 @@ spec:
       dashboard:
         ingressClassName: internal
         host:
-          name: rook.ktwo.io
+          name: rook.hypyr.space
           path: /
     toolbox:
       enabled: true

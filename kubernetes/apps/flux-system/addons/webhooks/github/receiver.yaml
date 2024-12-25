@@ -2,7 +2,7 @@
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Receiver
 metadata:
-  name: k8s-gitops
+  name: homelab-cluster
 spec:
   type: github
   events:
@@ -13,7 +13,7 @@ spec:
   resources:
     - apiVersion: source.toolkit.fluxcd.io/v1
       kind: GitRepository
-      name: k8s-gitops
+      name: homelab-cluster
       namespace: flux-system
     - apiVersion: kustomize.toolkit.fluxcd.io/v1
       kind: Kustomization

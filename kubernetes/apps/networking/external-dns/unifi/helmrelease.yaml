@@ -26,7 +26,7 @@ spec:
   values:
     fullnameOverride: *app
     image: # TODO: https://github.com/kubernetes-sigs/external-dns/pull/4943
-      repository: ghcr.io/buroa/external-dns
+      repository: ghcr.io/cpritchett/external-dns
       tag: 631b84da
     provider:
       name: webhook
@@ -66,7 +66,7 @@ spec:
     sources: ["ingress", "service"]
     txtOwnerId: k8s
     txtPrefix: k8s.
-    domainFilters: ["ktwo.io"]
+    domainFilters: ["hypyr.space"]
     serviceMonitor:
       enabled: true
     podAnnotations:

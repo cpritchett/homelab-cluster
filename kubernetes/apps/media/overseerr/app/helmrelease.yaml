@@ -70,13 +70,13 @@ spec:
         annotations:
           gatus.io/path: *path
         hosts:
-          - host: "{{ .Release.Name }}.ktwo.io"
+          - host: "{{ .Release.Name }}.hypyr.space"
             paths: &paths
               - path: /
                 service:
                   identifier: app
                   port: http
-          - host: requests.ktwo.io
+          - host: requests.hypyr.space
             paths: *paths
     persistence:
       cache:

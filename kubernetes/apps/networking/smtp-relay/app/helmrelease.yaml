@@ -31,7 +31,7 @@ spec:
         containers:
           app:
             image:
-              repository: ghcr.io/buroa/maddy
+              repository: ghcr.io/cpritchett/maddy
               tag: 0.7.1@sha256:05cb9db331cf643ea3d3efa7ab3afe4ec4018e8299eb3b29810e85f0bf9aa682
             env:
               SMTP_RELAY_METRICS_PORT: &metricsPort 8080

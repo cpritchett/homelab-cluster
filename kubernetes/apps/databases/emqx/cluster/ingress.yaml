@@ -6,7 +6,7 @@ metadata:
 spec:
   ingressClassName: internal
   rules:
-    - host: emqx.ktwo.io
+    - host: emqx.hypyr.space
       http:
         paths:
           - path: /

@@ -26,13 +26,13 @@ storage:
 ui:
   title: Status | Gatus
   header: Status
-  logo: https://github.com/buroa/k8s-gitops/assets/36205263/14771e67-0c36-4b7c-923f-31f54529067d
-  link: https://github.com/buroa
+  logo: https://github.com/cpritchett/homelab-cluster/assets/36205263/14771e67-0c36-4b7c-923f-31f54529067d
+  link: https://github.com/cpritchett
   buttons:
     - name: Github
-      link: https://github.com/buroa
+      link: https://github.com/cpritchett
     - name: Homelab
-      link: https://github.com/buroa/k8s-gitops
+      link: https://github.com/cpritchett/homelab-cluster
 
 web:
   port: $${GATUS_WEB_PORT}

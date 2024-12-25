@@ -29,13 +29,13 @@ spec:
       ingress:
         enabled: true
         ingressClassName: internal
-        hosts: ["am.ktwo.io"]
+        hosts: ["am.hypyr.space"]
       alertmanagerSpec:
         alertmanagerConfiguration:
           name: alertmanager
           global:
             resolveTimeout: 5m
-        externalUrl: https://am.ktwo.io
+        externalUrl: https://am.hypyr.space
         storage:
           volumeClaimTemplate:
             spec:
@@ -63,7 +63,7 @@ spec:
       ingress:
         enabled: true
         ingressClassName: internal
-        hosts: ["prometheus.ktwo.io"]
+        hosts: ["prometheus.hypyr.space"]
       prometheusSpec:
         ruleSelectorNilUsesHelmValues: false
         serviceMonitorSelectorNilUsesHelmValues: false
@@ -74,7 +74,7 @@ spec:
         walCompression: true
         enableFeatures:
           - memory-snapshot-on-shutdown
-        externalUrl: https://prometheus.ktwo.io
+        externalUrl: https://prometheus.hypyr.space
         retention: 14d
         retentionSize: 50GB
         resources:

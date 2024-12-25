@@ -29,7 +29,7 @@ spec:
         containers:
           app:
             image:
-              repository: ghcr.io/buroa/sabnzbd
+              repository: ghcr.io/cpritchett/sabnzbd
               tag: 4.4.1@sha256:291e736eb68dc5f4e2ffbe72d3d61eeadbe5d1a50cb6ed886d730e49bf4100c7
             env:
               SABNZBD__PORT: &port 8080
@@ -39,8 +39,8 @@ spec:
                 sabnzbd.media.svc,
                 sabnzbd.media.svc.cluster,
                 sabnzbd.media.svc.cluster.local,
-                {{ .Release.Name }}.ktwo.io,
-                sab.ktwo.io
+                {{ .Release.Name }}.hypyr.space,
+                sab.hypyr.space
               TZ: ${TIMEZONE}
             envFrom:
               - secretRef:
@@ -79,13 +79,13 @@ spec:
       app:
         className: internal
         hosts:
-          - host: "{{ .Release.Name }}.ktwo.io"
+          - host: "{{ .Release.Name }}.hypyr.space"
             paths: &paths
               - path: /
                 service:
                   identifier: app
                   port: http
-          - host: sab.ktwo.io
+          - host: sab.hypyr.space
             paths: *paths
     persistence:
       config:

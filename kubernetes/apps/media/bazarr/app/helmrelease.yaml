@@ -29,7 +29,7 @@ spec:
         containers:
           app:
             image:
-              repository: ghcr.io/buroa/bazarr
+              repository: ghcr.io/cpritchett/bazarr
               tag: 1.4.5@sha256:1c81a8a44b806925d6650ad65f2be46a5d0ad76c24adbaf79f19e84ef61fee30
             env:
               BAZARR__PORT: &port 6767
@@ -89,7 +89,7 @@ spec:
       app:
         className: internal
         hosts:
-          - host: "{{ .Release.Name }}.ktwo.io"
+          - host: "{{ .Release.Name }}.hypyr.space"
             paths:
               - path: /
                 service:
