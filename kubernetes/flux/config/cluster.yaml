@@ -2,11 +2,11 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
-  name: k8s-gitops
+  name: homelab-cluster
   namespace: flux-system
 spec:
   interval: 15m
-  url: ssh://git@github.com/buroa/k8s-gitops
+  url: ssh://git@github.com/cpritchett/homelab-cluster
   ref:
     branch: master
   secretRef:
@@ -29,7 +29,7 @@ spec:
   wait: false
   sourceRef:
     kind: GitRepository
-    name: k8s-gitops
+    name: homelab-cluster
   decryption:
     provider: sops
     secretRef:

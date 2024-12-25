@@ -1,10 +1,10 @@
 ---
 originRequest:
-  originServerName: external.ktwo.io
+  originServerName: external.hypyr.space
 
 ingress:
-  - hostname: ktwo.io
+  - hostname: hypyr.space
     service: https://nginx-external-controller.networking.svc.cluster.local
-  - hostname: "*.ktwo.io"
+  - hostname: "*.hypyr.space"
     service: https://nginx-external-controller.networking.svc.cluster.local
   - service: http_status:404

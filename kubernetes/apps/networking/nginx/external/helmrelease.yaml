@@ -60,7 +60,7 @@ spec:
         use-forwarded-headers: true
       extraArgs:
         default-ssl-certificate: networking/wildcard-tls
-        publish-status-address: &hostname external.ktwo.io
+        publish-status-address: &hostname external.hypyr.space
       ingressClass: external
       ingressClassResource:
         name: external

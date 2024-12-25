@@ -71,7 +71,7 @@ spec:
         annotations:
           gatus.io/path: *path
         hosts:
-          - host: "{{ .Release.Name }}.ktwo.io"
+          - host: "{{ .Release.Name }}.hypyr.space"
             paths:
               - path: /
                 service:

@@ -29,7 +29,7 @@ spec:
         initContainers:
           init-db:
             image:
-              repository: ghcr.io/buroa/postgres-init
+              repository: ghcr.io/cpritchett/postgres-init
               tag: 17
             envFrom: &envFrom
               - secretRef:
@@ -37,7 +37,7 @@ spec:
         containers:
           app:
             image:
-              repository: ghcr.io/buroa/sonarr-develop
+              repository: ghcr.io/cpritchett/sonarr-develop
               tag: 4.0.11.2784@sha256:70cfeba30679934dca8b9367f6c2177bce43eeed97c8262770c6e38bf8ac36b1
             env:
               SONARR__APP__INSTANCENAME: Sonarr
@@ -86,7 +86,7 @@ spec:
       app:
         className: internal
         hosts:
-          - host: "{{ .Release.Name }}.ktwo.io"
+          - host: "{{ .Release.Name }}.hypyr.space"
             paths:
               - path: /
                 service:

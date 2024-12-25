@@ -95,13 +95,13 @@ spec:
       app:
         className: internal
         hosts:
-          - host: "{{ .Release.Name }}.ktwo.io"
+          - host: "{{ .Release.Name }}.hypyr.space"
             paths: &paths
               - path: /
                 service:
                   identifier: app
                   port: http
-          - host: zigbee.ktwo.io
+          - host: zigbee.hypyr.space
             paths: *paths
     persistence:
       config:

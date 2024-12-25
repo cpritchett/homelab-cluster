@@ -27,7 +27,7 @@ spec:
       enabled: true
       className: internal
       hosts:
-        - host: blackbox.ktwo.io
+        - host: blackbox.hypyr.space
           paths:
             - path: /
               pathType: Prefix

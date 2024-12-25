@@ -27,7 +27,7 @@ spec:
         containers:
           app:
             image:
-              repository: ghcr.io/buroa/tautulli
+              repository: ghcr.io/cpritchett/tautulli
               tag: 2.15.0@sha256:4680892f835df5d94609ae1286fcb0f05a43b82c20b49ffb9b335212d584f35a
             env:
               TAUTULLI__PORT: &port 8181
@@ -84,7 +84,7 @@ spec:
         annotations:
           gatus.io/path: *path
         hosts:
-          - host: "{{ .Release.Name }}.ktwo.io"
+          - host: "{{ .Release.Name }}.hypyr.space"
             paths:
               - path: /
                 service:

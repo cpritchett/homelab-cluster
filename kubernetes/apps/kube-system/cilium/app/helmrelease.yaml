@@ -52,7 +52,7 @@ spec:
         ingress:
           enabled: true
           className: internal
-          hosts: ["hubble.ktwo.io"]
+          hosts: ["hubble.hypyr.space"]
     operator:
       prometheus:
         enabled: true
