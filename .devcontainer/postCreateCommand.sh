@@ -9,4 +9,7 @@ sudo apt update
 sudo apt install -y mise
 
 # add a line to the bash profile of the visual studio code user
-echo "eval "$(mise activate bash --shims)"" >> /home/vscode/.bash_profile
+echo 'eval "$(mise activate bash)"' >> /home/vscode/.bashrc
+
+# install k9s
+wget https://github.com/derailed/k9s/releases/download/v0.32.7/k9s_linux_amd64.deb && apt install ./k9s_linux_amd64.deb && rm k9s_linux_amd64.deb
